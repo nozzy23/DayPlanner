@@ -34,6 +34,10 @@ body {
     white-space: pre-wrap;
     height: 80px;
     border-top: 1px solid white;;
+    
+  }
+  .text {
+    width: 500px;
   }
   
   .hour {

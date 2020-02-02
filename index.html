@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link href="DayPlanner/style.css">
     <title>Work Day Scheduler</title>
   </head>
 
@@ -32,65 +32,80 @@
       <!-- Timeblocks go here -->
 
       <div class="row">
-        <div class="col-sm time">Time</div>
-        <div class="col-sm text"><input type="text"></div>
-        <div class="col-sm save"><button>This will save to local</button></div>
+        <div class="col-sm time">9:00 AM</div>
+        <div class="col-sm word nine"><input type="text" placeholder="What's On The Agenda?"></div>
+        <div class="col-sm saveBtn"><button class="save" onclick="SaveInformation()"><i class="far fa-save"></i></button></div>
       </div>
 
       <div class="row">
-        <div class="col-sm time">Set Time here</div>
-        <div class="col-sm text"><input type="text"></div>
-        <div class="col-sm save"><button>This will save to local</button></div>
+        <div class="col-sm time">10:00 AM</div>
+        <div class="col-sm text ten"><input type="text" placeholder="What's On The Agenda?"></div>
+        <div class="col-sm saveBtn"><button class="save" onclick="SaveInformation()"><i class="far fa-save"></i></button></div>
       </div>
 
       <div class="row">
-        <div class="col-sm time">Set Time here</div>
-        <div class="col-sm text"><input type="text"></div>
-        <div class="col-sm save"><button>This will save to local</button></div>
+        <div class="col-sm time">11:00 AM</div>
+        <div class="col-sm text eleven"><input type="text" placeholder="What's On The Agenda?"></div>
+        <div class="col-sm saveBtn"><button class="save" onclick="SaveInformation()"><i class="far fa-save"></i></button></div>
       </div>
 
       <div class="row">
-        <div class="col-sm time">Set Time here</div>
-        <div class="col-sm text"><input type="text"></div>
-        <div class="col-sm save"><button>This will save to local</button></div>
+        <div class="col-sm time">12:00 PM</div>
+        <div class="col-sm text twelve"><input type="text" placeholder="What's On The Agenda?"></div>
+        <div class="col-sm saveBtn"><button class="save" onclick="SaveInformation()"><i class="far fa-save"></i></button></div>
       </div>
 
       <div class="row">
-        <div class="col-sm time">Set Time here</div>
-        <div class="col-sm text"><input type="text"></div>
-        <div class="col-sm save"><button>This will save to local</button></div>
+        <div class="col-sm time">1:00 PM</div>
+        <div class="col-sm text one"><input type="text" placeholder="What's On The Agenda?"></div>
+        <div class="col-sm saveBtn"><button class="save" onclick="SaveInformation()"><i class="far fa-save"></i></button></div>
       </div>
 
       <div class="row">
-        <div class="col-sm time">Set Time here</div>
-        <div class="col-sm text"><input type="text"></div>
-        <div class="col-sm save"><button>This will save to local</button></div>
+        <div class="col-sm time">2:00 PM</div>
+        <div class="col-sm text two"><input type="text" placeholder="What's On The Agenda?"></div>
+        <div class="col-sm saveBtn"><button class="save" onclick="SaveInformation()"><i class="far fa-save"></i></button></div>
       </div>
 
       <div class="row">
-        <div class="col-sm time">Set Time here</div>
-        <div class="col-sm text"><input type="text"></div>
-        <div class="col-sm save"><button>This will save to local</button></div>
+        <div class="col-sm time">3:00 PM</div>
+        <div class="col-sm text three"><input type="text" placeholder="What's On The Agenda?" ></div>
+        <div class="col-sm saveBtn"><button class="save" onclick="SaveInformation()"><i class="far fa-save"></i></button></div>
       </div>
 
       <div class="row">
-        <div class="col-sm time">Set Time here</div>
-        <div class="col-sm text"><input type="text"></div>
-        <div class="col-sm save"><button>This will save to local</button></div>
+        <div class="col-sm time">4:00 PM</div>
+        <div class="col-sm text four"><input type="text" placeholder="What's On The Agenda?"></div>
+        <div class="col-sm saveBtn"><button class="save" onclick="SaveInformation()"><i class="far fa-save"></i></button></div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm time">5:00 PM</div>
+        <div class="col-sm text five"><input type="text" placeholder="What's On The Agenda?"></div>
+        <div class="col-sm saveBtn"><button class="save" onclick="SaveInformation()"><i class="far fa-save"></i></button></div>
       </div>
 
     </div>
 <!-----------------------script------------------>
+ 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="Library/moment.min.js"></script>
+    <script src= "../DayPlanner/code.js"></script>
+   
     
     <script>
+    // add time on the top of the page
     var timeNow = moment();
     $("#currentDay").text(timeNow);
 
+      var inputLocal = $(".word");
+      var inputButton = $(".save");
 
-
+      $(".saveBtn").on("click",function(){
+   
+      });
    
     </script>
 
