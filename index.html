@@ -22,7 +22,7 @@
     <title>Work Day Scheduler</title>
   </head>
 
-  <body>
+  <body onload=getInformation()>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
@@ -33,55 +33,55 @@
 
       <div class="row">
         <div class="col-sm time">9:00 AM</div>
-        <div class="col-sm word nine"><input type="text" placeholder="What's On The Agenda?"></div>
+        <div class="col-sm word" ><input id="nine" type="text" placeholder="What's On The Agenda?"></div>
         <div class="col-sm saveBtn"><button class="save" onclick="SaveInformation()"><i class="far fa-save"></i></button></div>
       </div>
 
       <div class="row">
         <div class="col-sm time">10:00 AM</div>
-        <div class="col-sm text ten"><input type="text" placeholder="What's On The Agenda?"></div>
+        <div class="col-sm text" ><input id="ten" type="text" placeholder="What's On The Agenda?"></div>
         <div class="col-sm saveBtn"><button class="save" onclick="SaveInformation()"><i class="far fa-save"></i></button></div>
       </div>
 
       <div class="row">
         <div class="col-sm time">11:00 AM</div>
-        <div class="col-sm text eleven"><input type="text" placeholder="What's On The Agenda?"></div>
+        <div class="col-sm text"><input id="eleven" type="text" placeholder="What's On The Agenda?"></div>
         <div class="col-sm saveBtn"><button class="save" onclick="SaveInformation()"><i class="far fa-save"></i></button></div>
       </div>
 
       <div class="row">
         <div class="col-sm time">12:00 PM</div>
-        <div class="col-sm text twelve"><input type="text" placeholder="What's On The Agenda?"></div>
+        <div class="col-sm text"><input id ="twelve" type="text" placeholder="What's On The Agenda?"></div>
         <div class="col-sm saveBtn"><button class="save" onclick="SaveInformation()"><i class="far fa-save"></i></button></div>
       </div>
 
       <div class="row">
         <div class="col-sm time">1:00 PM</div>
-        <div class="col-sm text one"><input type="text" placeholder="What's On The Agenda?"></div>
+        <div class="col-sm text"><input id="one" type="text" placeholder="What's On The Agenda?"></div>
         <div class="col-sm saveBtn"><button class="save" onclick="SaveInformation()"><i class="far fa-save"></i></button></div>
       </div>
 
       <div class="row">
         <div class="col-sm time">2:00 PM</div>
-        <div class="col-sm text two"><input type="text" placeholder="What's On The Agenda?"></div>
+        <div class="col-sm text"><input id="two" type="text" placeholder="What's On The Agenda?"></div>
         <div class="col-sm saveBtn"><button class="save" onclick="SaveInformation()"><i class="far fa-save"></i></button></div>
       </div>
 
       <div class="row">
         <div class="col-sm time">3:00 PM</div>
-        <div class="col-sm text three"><input type="text" placeholder="What's On The Agenda?" ></div>
+        <div class="col-sm text"><input id="three" type="text" placeholder="What's On The Agenda?" ></div>
         <div class="col-sm saveBtn"><button class="save" onclick="SaveInformation()"><i class="far fa-save"></i></button></div>
       </div>
 
       <div class="row">
         <div class="col-sm time">4:00 PM</div>
-        <div class="col-sm text four"><input type="text" placeholder="What's On The Agenda?"></div>
+        <div class="col-sm text"><input id="four" type="text" placeholder="What's On The Agenda?"></div>
         <div class="col-sm saveBtn"><button class="save" onclick="SaveInformation()"><i class="far fa-save"></i></button></div>
       </div>
 
       <div class="row">
         <div class="col-sm time">5:00 PM</div>
-        <div class="col-sm text five"><input type="text" placeholder="What's On The Agenda?"></div>
+        <div class="col-sm text"><input id="five" type="text" placeholder="What's On The Agenda?"></div>
         <div class="col-sm saveBtn"><button class="save" onclick="SaveInformation()"><i class="far fa-save"></i></button></div>
       </div>
 
@@ -93,21 +93,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="Library/moment.min.js"></script>
     <script src= "../DayPlanner/code.js"></script>
-   
+    <script src="code.js"></script>
+    
     
     <script>
     // add time on the top of the page
-    var timeNow = moment();
-    $("#currentDay").text(timeNow);
-
-      var inputLocal = $(".word");
-      var inputButton = $(".save");
-
-      $(".saveBtn").on("click",function(){
-   
-      });
+    /*var timeNow = moment();
+    $("#currentDay").text(timeNow);*/
    
     </script>
 
   </body>
+  
 </html>
