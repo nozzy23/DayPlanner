@@ -1,3 +1,24 @@
+var now = moment();
+var currentTime= now.format("HH");
+console.log(currentTime);
+
+//cant color code my time
+$("row").each(function(i) {
+    var timeBlock = $(this).attr("id"); 
+    if(currentHour > timeBlock) {       
+        $(this).prop('disabled', true);
+    } else if (currentHour == timeBlock) {
+        $(this).removeClass("future");
+        $(this).addClass("present");
+    } else {
+        $(this).addClass("future");
+    };
+});
+
+
+
+
+//local storage
 function SaveInformation(){
     console.log($("#nine").val());
     localStorage.setItem("9",$("#nine").val());
@@ -21,7 +42,7 @@ function getInformation(){
     $("#four").val(localStorage.getItem("4"));
     $("#five").val(localStorage.getItem("5"));
 }
-
+//update time.
 var dateTime = null,
     date = null;
 
@@ -34,6 +55,9 @@ $(document).ready(function(){
     update();
     setInterval(update, 1000);
 });
+//
+
+
 
 
 /* 
